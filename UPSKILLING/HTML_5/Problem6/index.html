@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Event Feedback</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            margin: 20px;
+        }
+
+        img {
+            width: 200px;
+            transition: 0.3s;
+        }
+    </style>
+
+    <script>
+
+        // Validate phone number on blur
+        function validatePhone() {
+            let phone = document.getElementById("phone").value;
+
+            if (phone.length != 10) {
+                alert("Phone number must be 10 digits");
+            }
+        }
+
+        // Show event fee
+        function showFee() {
+            let event = document.getElementById("event").value;
+            let fee = "";
+
+            if (event == "Music") {
+                fee = "₹500";
+            }
+            else if (event == "Sports") {
+                fee = "₹300";
+            }
+            else if (event == "Workshop") {
+                fee = "₹700";
+            }
+
+            document.getElementById("fee").innerHTML =
+                "Event Fee: " + fee;
+        }
+
+        // Submit confirmation
+        function submitForm() {
+            alert("Feedback submitted successfully!");
+        }
+
+        // Enlarge image
+        function enlargeImage(img) {
+            img.style.width = "400px";
+        }
+
+        // Character counter
+        function countChars() {
+            let text =
+                document.getElementById("feedback").value;
+
+            document.getElementById("count").innerHTML =
+                "Characters: " + text.length;
+        }
+
+    </script>
+</head>
+<body>
+
+    <h1>Event Feedback Form</h1>
+
+    <label>Phone Number:</label>
+    <input type="text" id="phone" onblur="validatePhone()">
+
+    <br><br>
+
+    <label>Select Event:</label>
+    <select id="event" onchange="showFee()">
+        <option value="">Choose</option>
+        <option>Music</option>
+        <option>Sports</option>
+        <option>Workshop</option>
+    </select>
+
+    <p id="fee"></p>
+
+    <img src="event.jpg"
+         ondblclick="enlargeImage(this)"
+         alt="Event Image">
+
+    <br><br>
+
+    <textarea id="feedback"
+              onkeyup="countChars()"
+              rows="5"
+              cols="40"
+              placeholder="Enter feedback"></textarea>
+
+    <p id="count">Characters: 0</p>
+
+    <button onclick="submitForm()">
+        Submit
+    </button>
+
+</body>
+</html>
