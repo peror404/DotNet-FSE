@@ -1,0 +1,31 @@
+/* Navigation menu */
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            background-color: #333;
+        }
+
+        li {
+            display: inline-block;
+            padding: 15px;
+            margin: 5px;
+        }
+
+        /* Link styles */
+        a:link {
+            color: white;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: lightgray;
+        }
+
+        a:hover {
+            color: yellow;
+        }
+
+        a:active {
+            color: red;
+        }

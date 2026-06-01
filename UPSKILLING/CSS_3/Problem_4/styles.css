@@ -1,0 +1,37 @@
+        h1 {
+
+            /* HEX color */
+            color: #003366;
+
+            text-align: center;
+        }
+
+        .content {
+
+            /* RGBA background */
+            background-color: rgba(153, 98, 98, 0.8);
+            background-image: url("/upskilling/CSS_3/Problem_4/city.jpg");
+            background-size: cover;
+            padding: 20px;
+            margin: 20px;
+        }
+
+        .section-header {
+
+            /* Gradient background */
+            background: linear-gradient(to right, blue, purple);
+
+            color: white;
+
+            padding: 15px;
+        }
+
+         body {
+
+            /* Fallback color */
+            background-color: #c38080;
+            background-size: cover;
+        }
+        p{
+            color: white;
+        }

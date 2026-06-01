@@ -1,0 +1,10 @@
+/* Header styles */
+h1 {
+    text-align: center;
+}
+
+/* Paragraph styles */
+.para {
+    font-size: 18px;
+    color: blue;
+}

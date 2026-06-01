@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Box Model Example</title>
+
+    <style>
+
+        .eventCard {
+
+            border: 3px solid blue;
+
+            padding: 20px;
+
+            margin: 20px;
+
+            background-color: lightyellow;
+        }
+
+        input:focus {
+
+            outline: 3px solid red;
+        }
+
+        .hiddenBox {
+
+            visibility: hidden;
+        }
+
+        .noneBox {
+
+            display: none;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="eventCard">
+
+        <h2>Community Workshop</h2>
+
+        <p>
+            Learn HTML, CSS, and JavaScript basics.
+        </p>
+
+    </div>
+
+    <form>
+
+        <label>Name:</label>
+
+        <input type="text">
+
+    </form>
+
+    <h3>visibility: hidden Example</h3>
+
+    <div class="hiddenBox">
+        This box is hidden but space remains.
+    </div>
+
+    <h3>display: none Example</h3>
+
+    <div class="noneBox">
+        This box is removed completely.
+    </div>
+
+</body>
+</html>

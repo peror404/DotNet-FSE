@@ -1,0 +1,27 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+/* Style for main CTA button */
+.cta-button {
+    background-color: #007BFF;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Event card styles */
+.event-card {
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+}
